@@ -1,9 +1,160 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>HELLOSTEPHNI</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+    <head>
+        <title>CSS Display and Positioning Reference</title>
+        <link rel="stylesheet" href="./resources/style.css">
+    </head>
+    <body>
+        <h1>CSS Display and Positioning Reference</h1>
+        <h2>CSS Properties</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <span class="code">position</span>
+                        </th>
+                        <td>Determines position of HTML elements on a web page.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">z-index</span>
+                        </th>
+                        <td>Specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">display</span>
+                        </th>
+                        <td>Determines the type of render block for an element.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <span class="code">float</span>
+                        </th>
+                        <td>Determines how far left or how far right an element should float within its parent element. To use this property, width of container must be specified.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">clear</span>
+                        </th>
+                        <td>Specifies how an element should behave when it bumps into another element within the same containing element. Usually used in combination with elements having the CSS float property.</td>
+                    </tr>
+                </tbody>
+            </table>
+        <h2>CSS Values</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Declaration</th>
+                        <th rowspan="2">Description</th>
+                    </tr>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">
+                            <span class="code">position</span>
+                        </th>
+                        <th>
+                            <span class="code">fixed</span>
+                        </th>
+                        <td>The element is set/pinned to a specific spot on a page, stays in the same space regardless of scrolling.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">relative</span>
+                        </th>
+                        <td>Enables an element to be positioned relative to where it would have originally been on a web page. Property then has to be further edited with offset propertiies to determine the actual position. Without the offset properties, this declaration will have no effect on its positioning.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">absolute</span>
+                        </th>
+                        <td>Removes an element entirely from the document flow and positions it relative to its closest parent element that is positioned with relative or absolute. Element can then be further motified with positioning attributes top, left, bottom and right.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">static</span>
+                        </th>
+                        <td>Default value.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">z-index</span>
+                        </th>
+                        <th>
+                            <span class="code">n</span>
+                        </th>
+                        <td>Uses positive or negative integer values. Element with the highest z-index value will be at the foreground, while the element with the lowest z-index value will be at the back.</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">
+                            <span class="code">display</span>
+                        </th>
+                        <th>
+                            <span class="code">block</span>
+                        </th>
+                        <td>Elements take up the full width of their container with line breaks before and after, and can have their height and width manually adjusted.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">inline</span>
+                        </th>
+                        <td>Elements take up as little space as possible, flow horizontally, and cannot have their width or height manually adjusted.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">inline-block</span>
+                        </th>
+                        <td>Elements can appear next to each other, and can have their width and height manually adjusted.</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">
+                            <span class="code">float</span>
+                        </th>
+                        <th>
+                            <span class="code">left</span>
+                        </th>
+                        <td>Floats an element to the left side of its container.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">right</span>
+                        </th>
+                        <td>Floats an element to the right side of its container.</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">
+                            <span class="code">clear</span>
+                        </th>
+                        <th>
+                            <span class="code">left</span>
+                        </th>
+                        <td>Determines that no other elements within the same containing element are allowed to float on the left side of this element.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">right</span>
+                        </th>
+                        <td>Determines that no other elements within the same containing element are allowed to float on the right side of this element.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="code">both</span>
+                        </th>
+                        <td>Determines that no elements within the same containing element are allowed to float on either side of this element.</td>
+                    </tr>
+                </tbody>
+            </table>
+    </body>
 </html>
